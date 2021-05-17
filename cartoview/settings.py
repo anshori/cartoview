@@ -51,7 +51,7 @@ MEDIA_ROOT = os.getenv('MEDIA_ROOT', os.path.join(BASE_DIR, MEDIAFILES_LOCATION)
 STATIC_ROOT = os.getenv('STATIC_ROOT', os.path.join(BASE_DIR, STATICFILES_LOCATION))
 
 DATABASE_URL = os.getenv(
-    'DATABASE_URL', 'sqlite:////{}/database.sqlite'.format(
+    'DATABASE_URL', 'spatialite:////{}/database.sqlite'.format(
         os.path.dirname(CARTOVIEW_DIR)))
 DATASTORE_DATABASE_URL = os.getenv('DATASTORE_DATABASE_URL', None)
 if DATABASE_URL:
