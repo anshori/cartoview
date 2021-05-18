@@ -33,8 +33,8 @@ install:
   - sudo apt-get -qq -y update
   - sudo apt-get install -y gcc gettext python3-pip libpq-dev sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev git gdal-bin lsof
     psmisc
-  - sudo apt-get install -y python3-gdal python-imaging python-lxml
-  - sudo apt-get install -y python3-virtualenv python3-pil python3-lxml python3-pyproj python3-shapely python3-httplib2 python3-httplib2
+  - sudo apt-get install -y python3-gdal python-lxml
+  - sudo apt-get install -y python3-virtualenv python-pil python3-pil python3-lxml python3-pyproj python3-shapely python3-httplib2 python3-httplib2
   - sudo apt-get install -y python3-dev libgdal-dev libgeoip-dev libxml2
     libxml2-dev libxslt-dev git default-jdk
   - sudo apt-get install -y python-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev libjpeg-dev
